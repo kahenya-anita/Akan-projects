@@ -34,7 +34,7 @@ Incase of anything contact me through my email address anitakahenya@gmail.com
 Or incase its an emergency call me directly. My dials +254799948716
 ### License
 *MIT
-Copyright (c) {2020} **BY ANITA KAHENYA**
+Copyright (c) {2020} **BY ANITA KAHENYA (https://github.com/kahenya-anita)**
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
