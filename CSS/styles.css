@@ -1,9 +1,44 @@
+align-content: normal
+align-items: normal
+align-self: auto
+align-baseline: auto
+animation-direction: normal
+animation-duration: 0s
+animation-iteration-count: 1
+animation-name: none
+animation-play-state: running
+animation-timing-function:-webkit-search-results-decoration
+backface-visibility: :focus-visible
+background-attachment: scroll
+background-blend-mode: normal
+background-clip: :border-box
+background-color:rgb(240,244,245)
 
 .img {
     background-attachment: fixed;
-    background-image: url();
+    background-image: url(file:///home/anita/Documents/Akan-project/images/nature.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh; */
+}
+
+.head {
+    float: inline-start;
+    font-weight: 400;
+    font-style: oblique;
+    font-color: purple;
+    font-stretch: initial;
+}
+
+.text {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: initial;
+}
+.page {
+    font-size: inherit;
+    font-weight: lighter;
+    font-family: sans-serif;
+    float: left;
 }
