@@ -6,7 +6,7 @@
     <h1>Naming Calender</h1>
     <script src="JS/script.js"></script>
     <div class="img">
-    <img src="images/nature.jpg" alt="A photo of nature">
+        <img src="images/nature.jpg" alt="A photo of nature">
     </div>
     <link href="CSS/styles.css" rel="stylesheet" type="text/css" media="all">
 </head>
@@ -15,69 +15,79 @@
     <div class="container">
         <div class="jumbotron">
             <div class="row">
-                <div class="col-12 col-md-7"> 
-    <p class="text">This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.</p>
+                <div class="col-12 col-md-7">
+                    <p class="text">This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.</p>
 
-    <p class="page">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
-    <div id="result"> <!--div responsible for displaying results -->
-        <div id="error" class="response"><h6><b>Please enter your birth details.</b></h6></div> <!--div responsible for displaying error message -->
-            <form>
-                <div class="form-row"> <!--allows for creation of an inline form -->
-                    <div class="form-group col-md-1"></div>
-                    <div class="form-group col-md-1 calendar">
-                            <span class="input-group-addon" style="font-size:24px; color: rgb(64, 116, 212)"><i class="fa fa-calendar"></i></span> <!-- adds calendar icon -->
-                    </div>
-                    <div class="form-group col-md-2">
-                            <label for="dd"><b>Date</b></label> <!--label for date input box-->
-                            <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
+                    <p class="page">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
+                    <div id="result">
+                        <!--div responsible for displaying results -->
+                        <div id="error" class="response">
+                            <h6><b>Please enter your birth details.</b></h6></div>
+                        <!--div responsible for displaying error message -->
+                        <form>
+                            <div class="form-row">
+                                <!--allows for creation of an inline form -->
+                                <div class="form-group col-md-1"></div>
+                                <div class="form-group col-md-1 calendar">
+                                    <span class="input-group-addon" style="font-size:24px; color: rgb(64, 116, 212)"><i class="fa fa-calendar"></i></span>
+                                    <!-- adds calendar icon -->
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="dd"><b>Date</b></label>
+                                    <!--label for date input box-->
+                                    <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="mm"><b>Month</b></label>
+                                    <!--label for month input box -->
+                                    <select class="form-control" id="mm">
+                                        <!--creates a list of options to be selected from -->
+                                        <option>------</option>
+                                        <!--placeholder for month input box -->
+                                        <option>January</option>
+                                        <option>February</option>
+                                        <option>March</option>
+                                        <option>April</option>
+                                        <option>May</option>
+                                        <option>June</option>
+                                        <option>July</option>
+                                        <option>August</option>
+                                        <option>September</option>
+                                        <option>October</option>
+                                        <option>November</option>
+                                        <option>December</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="yy"><b>Year</b></label>
+                                    <!--label for year input box-->
+                                    <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
+                                </div>
+                                <div class="form-group col-md-1"></div>
                             </div>
-                            <div class="form-group col-md-4">
-                            <label for="mm"><b>Month</b></label> <!--label for month input box -->
-                            <select class="form-control" id="mm"> <!--creates a list of options to be selected from -->
-                                <option>------</option> <!--placeholder for month input box -->
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
-                            </div>
-                            <div class="form-group col-md-3">
-                            <label for="yy"><b>Year</b></label> <!--label for year input box-->
-                            <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
-                            </div>
-                            <div class="form-group col-md-1"></div>
-                </div> 
 
-                <div class="form-group">
-                            <label class="label">What's your gender?</label> <!--label for gender radios -->
-                            <div class="rdio rdio-default">
+                            <div class="form-group">
+                                <label class="label">What's your gender?</label>
+                                <!--label for gender radios -->
+                                <div class="rdio rdio-default">
                                     <input type="radio" name="gender" id="male" value="Male">
                                     <label for="male">&nbsp;&nbsp;<b>Male</b></label>
-                            </div>
-                            <div class="rdio rdio-default">
+                                </div>
+                                <div class="rdio rdio-default">
                                     <input type="radio" name="gender" id="female" value="Female">
                                     <label for="female">&nbsp;&nbsp;<b>Female</b></label>
+                                </div>
                             </div>
+                            <div class="button">
+                                <button type="submit" onclick="readData(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class ="button">
-                <button type="submit" onclick="readData(); return false;" class="btn btn-primary btn-xs"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>	
-                </div>	
-            </form>	
-        </div>
-        </div>
-        <div class="col-md-3 col-13"></div>
+                <div class="col-md-3 col-13"></div>
+            </div>
         </div>
     </div>
-    </div>
-
 
 </body>
 
