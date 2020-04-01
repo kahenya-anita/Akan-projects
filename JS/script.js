@@ -1,7 +1,7 @@
 document.getElementById("submit").addEventListener("click",function(event){
     event.preventDefault()
   })
-  function readData(){ 
+  function calc(){ 
     var dd = document.getElementById("dd").value; //get value of date inputed 
     var mm = document.getElementById("mm").value; //get value of month inputed 
     var yy = document.getElementById("yy").value; //get value of year inputed
@@ -10,8 +10,10 @@ document.getElementById("submit").addEventListener("click",function(event){
     var days = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     var femaleNames = ["Akosua","Adwoa","Abenaa", "Akua","Yaa","Yaa","Afua","Ama"];
     var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-    var birthDate = new date (mm + '/' + dd +'/' + yy);
-    var dayOfTheWeek = birthDate.getDate();
+    var dates = (dd + '/' + mm +'/' + yy);
+    var birthday = new dates(dates);
+    var DOB = birthDay.getDate();
+    console.log(DOB);
     if (dd <= 0 || dd > 31){ //ensures user enters a date and validates date entered for months with 31 days
         document.getElementById("error").innerText = "Please enter a valid date!" //shows error message by replacing the HTML content of id=error 
         document.getElementById("error").style.color = "crimson"
