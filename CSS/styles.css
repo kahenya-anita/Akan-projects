@@ -28,3 +28,9 @@ body {
     font-family: sans-serif;
     float: left;
 }
+.container {
+    float: centre;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 700;
+}
