@@ -11,73 +11,65 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-                    <p class="text">This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
-                Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
-                <div class= header>
-                            <header>Enter correct details here!.</header>
-                        <!--div responsible for displaying error message -->
+            <p class="text">This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
+            <div class="header">
+                <header>Enter correct details here!.</header>
+                <!--div responsible for displaying error message -->
+            </div>
+            <form>
+                <div class="form-row">
+                    <!--allows for creation of an inline form-->
                 </div>
-                        <form>
-                            <div class="form-row">
-                                <!--allows for creation of an inline form -->
-                                <div class="form-group col-md-3"></div>
-                                <div class="form-group col-md-3 calendar">
-                                    <span class="input-group-addon" style="font-size:24px; color: rgb(64, 116, 212)"><i class="fa fa-calendar"></i></span>
-                                    <!-- adds calendar icon -->
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="dd"><b>Date</b></label>
-                                    <!--label for date input box-->
-                                    <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="mm"><b>Month</b></label>
-                                    <!--label for month input box -->
-                                    <select class="form-control" id="mm">
-                                        <!--creates a list of options to be selected from -->
-                                        <option>------</option>
-                                        <!--placeholder for month input box -->
-                                        <option>January</option>
-                                        <option>February</option>
-                                        <option>March</option>
-                                        <option>April</option>
-                                        <option>May</option>
-                                        <option>June</option>
-                                        <option>July</option>
-                                        <option>August</option>
-                                        <option>September</option>
-                                        <option>October</option>
-                                        <option>November</option>
-                                        <option>December</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="yy"><b>Year</b></label>
-                                    <!--label for year input box-->
-                                    <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
-                                </div>
-                                <div class="form-group col-md-3"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="label">What's your gender?</label>
-                                <!--label for gender radios -->
-                                <div class="rdio rdio-default">
-                                    <input type="radio" name="gender" id="male" value="Male">
-                                    <label for="male">&nbsp;&nbsp;<b>Male</b></label>
-                                </div>
-                                <div class="rdio rdio-default">
-                                    <input type="radio" name="gender" id="female" value="Female">
-                                    <label for="female">&nbsp;&nbsp;<b>Female</b></label>
-                                </div>
-                            </div>
-                            <div class="button">
-                                <button type="submit" onclick="calc()">calculate</button>
-                            </div>
-                        </form>
-                    </div
-                <div class="col-md-5 col-13"></div>
+                <div class="form date">
+                    <label for="dd"><b>Date</b></label>
+                    <!--label for date input box-->
+                    <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
+                </div>
+                <div class="form month">
+                    <label for="mm"><b>Month</b></label>
+                    <!--label for month input box -->
+                    <select class="form-control" id="mm">
+                        <!--creates a list of options to be selected from -->
+                        <option>------</option>
+                        <!--placeholder for month input box -->
+                        <option value=01>January</option>
+                        <option value=02>February</option>
+                        <option value=03>March</option>
+                        <option value=04>April</option>
+                        <option value=05>May</option>
+                        <option value=06>June</option>
+                        <option value=07>July</option>
+                        <option value=08>August</option>
+                        <option value=09>September</option>
+                        <option value=10>October</option>
+                        <option value=11>November</option>
+                        <option value=12>December</option>
+                    </select>
+                </div>
+                <div class="form year">
+                    <label for="yy"><b>Year</b></label>
+                    <!--label for year input box-->
+                    <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
+                </div>
         </div>
+        <div class="form-gender">
+            <label class="label">What's your gender?</label>
+            <!--label for gender radios -->
+            <div class="rdio rdio-default">
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">&nbsp;&nbsp;<b>Male</b></label>
+            </div>
+            <div class="rdio rdio-default">
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">&nbsp;&nbsp;<b>Female</b></label>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit" onclick="calc()">calculate</button>
+        </div>
+        </form>
+    </div>
+    </div>
     </div>
 
 </body>

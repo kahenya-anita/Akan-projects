@@ -11,9 +11,9 @@ document.getElementById("submit").addEventListener("click",function(event){
     var femaleNames = ["Akosua","Adwoa","Abenaa", "Akua","Yaa","Yaa","Afua","Ama"];
     var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     var dates = (dd + '/' + mm +'/' + yy);
-    var birthday = new dates(dates);
+    var birthday = new Date(dates);
     var DOB = birthDay.getDate();
-    console.log(DOB);
+    alert(DOB);
     if (dd <= 0 || dd > 31){ //ensures user enters a date and validates date entered for months with 31 days
         document.getElementById("error").innerText = "Please enter a valid date!" //shows error message by replacing the HTML content of id=error 
         document.getElementById("error").style.color = "crimson"
