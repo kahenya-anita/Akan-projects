@@ -1,6 +1,6 @@
 body {
     background-attachment: fixed;
-    background-image: url("//cut");
+    background-image: url("/images/nature.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,9 +36,8 @@ body {
     font-weight: 700;
 }
 .button {
-    text-decoration-color: ivory;
-    color: lightseagreen;
-    font-weight: bolder;
-    padding: 15px;
+  padding: 10px; 
+  background-color: limegreen; 
+  border-radius: 5px;
 
 }

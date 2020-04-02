@@ -30,46 +30,46 @@ function output() {
   } else if (dd < 1 || dd > 31) {
       alert("invalid date");
   } else if (Math.round(result) == 1 && gender === "male") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Monday ,your akan name is " + maleName[1];
   } else if (Math.round(result) == 2 && gender === "male") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Tuesday ,your akan name is " + maleName[2];
   } else if (Math.round(result) == 3 && gender === "male") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Wednesday ,your akan name is " + maleName[3];
   } else if (Math.round(result) == 4 && gender === "male") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Thursday,your akan name is " + maleName[4];
   } else if (Math.round(result) == 5 && gender === "male") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Friday,your akan name is " + maleName[5];
   } else if (Math.round(result) == 6 && gender === "male") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Saturday,your akan name is " + maleName[6];
   } else if (Math.round(result) == 0 && gender === "male") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Sunday,your akan name is " + maleName[0];
   } else if (Math.round(result) == 1 && gender === "female") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on monday ,your akan name is " + femaleName[1];
   } else if (Math.round(result) == 2 && gender === "female") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Tuesday,your akan name is " + femaleName[2];
   } else if (Math.round(result) == 3 && gender === "female") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Wednesday,your akan name is " + femaleName[3];
   } else if (Math.round(result) == 4 && gender === "female") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Thursday,your akan name is " + femaleName[4];
   } else if (Math.round(result) == 5 && gender === "female") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Friday,your akan name is " + femaleName[5];
   } else if (Math.round(result) == 6 && gender === "female") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Saturday,your akan name is " + femaleName[6];
   } else if (Math.round(result) == 0 && gender === "female") {
-      document.getElementById("display").innerHTML =
+      document.getElementById("result").innerHTML =
           "you were born on Sunday,your akan name is " + femaleName[0];
   } else {
       alert("Fill in all required fields");

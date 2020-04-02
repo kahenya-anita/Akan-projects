@@ -18,7 +18,7 @@ where;
  mod - is the modulus function ( % )
 ## Setup/Installation Requirements
 * Make sure u have access to reliable internet
-* type in the link from github page
+* type in the link from gh-pages(https://kahenya-anita.github.io/Akan-projects/)
 * open in a browser of your choise
 * fill in all the required fields and click submit
 * It will output your day name according to your DOB and GENDER
