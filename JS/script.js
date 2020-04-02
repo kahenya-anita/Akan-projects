@@ -13,7 +13,6 @@ document.getElementById("submit").addEventListener("click",function(event){
     var dates = (dd + '/' + mm +'/' + yy);
     var birthday = new Date(dates);
     var DOB = birthDay.getDate();
-    alert(DOB);
     if (dd <= 0 || dd > 31){ //ensures user enters a date and validates date entered for months with 31 days
         document.getElementById("error").innerText = "Please enter a valid date!" //shows error message by replacing the HTML content of id=error 
         document.getElementById("error").style.color = "crimson"
@@ -66,3 +65,4 @@ document.getElementById("submit").addEventListener("click",function(event){
         document.getElementById("error").style.paddingLeft = "40%"
     }
   }
+  alert(DOB);
